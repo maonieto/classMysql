@@ -23,7 +23,7 @@ class DbMysql {
 	// PROPIEDAD $dbselect -> Base de datos a activar
 	public $dbselect = 'example'; 	  
     
-    public $typearray = MYSQLI_BOTH; // MYSQLI_ASSOC, MYSQLI_NUM,  MYSQLI_BOTH.
+    public $typearray = MYSQLI_BOTH; // MYSQLI_ASSOC, MYSQLI_NUM,  MYSQLI_BOTH
 	
 	
 	//METODO connect() -> Conecta al servidor MySQL
