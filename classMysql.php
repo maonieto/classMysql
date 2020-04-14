@@ -321,34 +321,6 @@ class DbMysql {
 		 
 	}
 		
-    function QueryBasic($query,$columns,$dblink){
-		
-	mysql_select_db('controlbaxport',$conect);
- 	
-		$result_query=mysql_query($query,$conect);
-		if ($result_query){
-			
-			$name=explode(':',$columns);
-			$count=count($name);
-			$result.='<table>';
-			while($rows=mysql_fetch_array($result_query)){	
-			$result.='<tr>';	
-				for ($i=0;$i<=$count-1;$i++){
-				$result.='<td>';
-				$result.=$rows[$name[$i]].'<br />';
-				$result.='</td>';
-			
-			}
-			$result.='</tr>';
-			}
-			$result.= '</table>';
-			return $result;
-		}else{
-			
-			$result='No se pudo hacer la consulta a la base de datos';
-			return $result;
-			}
-		}
 
 }
 
