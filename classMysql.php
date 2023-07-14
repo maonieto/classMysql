@@ -41,6 +41,7 @@ class DbMysql {
 	}
 	
 
+	
 	// METODO close($dblink)->Cierra la conexion al servidor: parametro $dblink -> link de conexion al servidor
 	 
 	public function close($dblink){
